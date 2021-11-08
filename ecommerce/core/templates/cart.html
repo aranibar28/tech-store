@@ -24,12 +24,14 @@
                             {% for item in items %}
                             <tr>
                                 <td class="product__thumbnail">
-                                    <a href="#">
+                                    <a href="/catalog/product/{{item.product.id}}">
                                         <img src="/{{item.product.main_picture}}" alt="">
                                     </a>
                                 </td>
                                 <td class="product__name">
-                                    <a href="#">{{item.product.title}}</a>
+                                    <a href="/catalog/product/{{item.product.id}}">
+                                        {{item.product.title}}
+                                    </a>
                                 </td>
                                 <td class="product__price">
                                     <div class="price">
@@ -54,7 +56,7 @@
                                         <span class="new__price">$ {{item.subtotal}}</span>
                                     </div>
                                     <a href="#" class="remove__cart-item">
-                                        <icon></icon>
+                                        <i class="uil uil-trash-alt"></i>
                                     </a>
                                 </td>
                             </tr>
@@ -89,7 +91,7 @@
                             <span class="new__price">$250.99</span>
                         </li>
                     </ul>
-                    <a href="">PROCEED TO CHECKOUT</a>
+                    <a href="https://www.paypal.com/pe/signin">PROCEED TO CHECKOUT</a>
                 </div>
             </form>
         </div>

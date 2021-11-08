@@ -231,6 +231,93 @@ Navigation
 
 /*
 ======================
+Carousel
+======================
+*/
+
+.Carousel{
+  width: 100%;
+}
+
+.Carousel h2{
+  font-size: 26px;
+  line-height: 38px;
+  opacity: .9;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+/* images */
+
+.slick-list{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  padding: 10px 0px;
+  margin: 0px auto;
+  max-width: 90vw;
+  overflow: hidden;
+}
+
+.slick-track{
+  position: relative;
+  display: flex;
+  transition: .5s ease-in-out;
+}
+
+.slick{
+  width: 275px;
+  padding: 0 18px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+.slick a img{
+  height: 300px;
+  transition: .3s ease-in-out;
+}
+
+.slick a img:hover{
+  opacity: .85;
+}
+
+/* buttons */
+.slick-arrow{
+  border-radius: 30px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 4;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+  border: 0;
+  cursor: pointer;
+}
+
+.slick-arrow:focus{
+  outline: 0;
+}
+
+.slick-arrow svg{
+  width: 12px;
+  height: 100%;
+  color: rgba(0,0,0,.7);
+}
+
+.slick-prev{
+  left: 0px;
+}
+.slick-next{
+  right: 0px;
+}
+
+
+/*
+======================
 Navigation Media Query
 ======================
 */
@@ -323,6 +410,14 @@ Navigation Media Query
   .nav__icons .icon__item {
     padding: 0.4rem;
   }
+
+  .slick-prev{
+    left: 10%;
+  }
+  .slick-next{
+    right: 10%;
+  }
+
 }
 
 /*
